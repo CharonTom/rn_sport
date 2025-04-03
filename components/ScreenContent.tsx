@@ -1,25 +1,18 @@
-import { Text, View } from 'react-native';
+import { Text, View, Image } from 'react-native';
 
-import { EditScreenInfo } from './EditScreenInfo';
+import { Timer } from './Timer';
 
-type ScreenContentProps = {
-  title: string;
-  path: string;
-  children?: React.ReactNode;
-};
-
-export const ScreenContent = ({ title, path, children }: ScreenContentProps) => {
+export const ScreenContent = () => {
   return (
-    <View className={styles.container}>
-      <Text className={styles.title}>{title}</Text>
-      <View className={styles.separator} />
-      <EditScreenInfo path={path} />
-      {children}
+    <View className="">
+      <Image
+        source={{
+          uri: 'https://www.team-arkea-samsic.fr/wp-content/uploads/2025/02/application-running.webp',
+        }}
+        className="h-64 w-full"
+      />
+      <Text className="bg-pink-200 p-4 text-2xl font-semibold ">Super Sport App</Text>
+      <Timer />
     </View>
   );
-};
-const styles = {
-  container: `items-center flex-1 justify-center`,
-  separator: `h-[1px] my-7 w-4/5 bg-gray-200`,
-  title: `text-xl font-bold`,
 };
