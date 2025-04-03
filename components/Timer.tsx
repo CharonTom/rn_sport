@@ -8,7 +8,7 @@ export const Timer = () => {
   const [currentRound, setCurrentRound] = useState(1);
   const [time, setTime] = useState(effortTime);
   const [isRunning, setIsRunning] = useState(false);
-  const [isEffort, setIsEffort] = useState(true);
+  const [isEffort, setIsEffort] = useState(true); // quand isEffort est true mode effort sinon mode repos
 
   useEffect(() => {
     if (!isRunning) {
@@ -17,7 +17,7 @@ export const Timer = () => {
   }, [effortTime]);
 
   useEffect(() => {
-    let timer;
+    let timer: string | number | NodeJS.Timeout | undefined;
     if (isRunning && rounds > 0) {
       timer = setInterval(() => {
         setTime((prevTime) => {
