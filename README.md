@@ -1,4 +1,4 @@
-# Timer Spot App - Module Application Mobile
+# Timer Sport App - Module Application Mobile
 
 ## Installation et Configuration
 
@@ -8,7 +8,7 @@ Suivez ces étapes pour installer et configurer le projet.
 
 ### Assurez vous d'avoir Node installé sur votre machine et faites "npm install" à la racine du projet pour installer les dépendances
 
-### Lancer l'application avec "npm run dev"
+### Lancer l'application avec "npm run start". Scanner le QR code qui apparait dans le terminal avec l'application Expo Go de votre mobile. l'application se chargera alors sur votre téléphone.
 
 ### Technologies utilisées
 
