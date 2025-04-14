@@ -12,8 +12,8 @@ Suivez ces étapes pour installer et configurer le projet.
 
 ### Technologies utilisées
 
-- Vue.js
-- TailwindCSS
+- React Native
+- NativeWindCSS
 
 Auteur : Tom Charon
 
